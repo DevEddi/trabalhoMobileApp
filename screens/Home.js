@@ -3,14 +3,15 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 
 
 
-export default function SignIn({ navigation }) {
+export default function Home({navigation}) {
   return (
     <View >
-      <Text>Sign In</Text>
+      <Text>Home</Text>
       <Button
-        title='Dashboard'
-        onPress={() => navigation.navigate('Dashboard')}
+        title='Sign In'
+        onPress={() => navigation.navigate('SignIn')}
       />
+     
       
     </View>
   );

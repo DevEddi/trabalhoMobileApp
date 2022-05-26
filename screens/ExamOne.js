@@ -3,10 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 
 
 
-export default function SignUp() {
+export default function ExamOne() {
   return (
     <View >
-      <Text>Sign Up</Text>
+      <Text>ExamOne</Text>
       
     </View>
   );
