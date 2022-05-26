@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-import RouteStack from './routes/RouteStack';
 
 
-export default function App() {
+export default function SignIn() {
   return (
-    
-    <RouteStack/>
-    
+    <View >
+      <Text>Sign In</Text>
+      
+    </View>
   );
 }
 
