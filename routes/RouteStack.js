@@ -7,8 +7,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SignIn from '../screens/SignIn';
 import Dashboard from '../screens/Dashboard';
 import Home from '../screens/Home';
-import ExamOne from '../screens/ExamOne';
-import ExamTwo from '../screens/ExamTwo';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,16 +24,8 @@ export default function RouteStack() {
             />
             <Stack.Screen
                 name="Dashboard"
-                component={Dashboard} 
-            />
-            <Stack.Screen
-                name="ExamOne"
-                component={ExamOne} 
-            />
-            <Stack.Screen
-                name="ExamTwo"
-                component={ExamTwo} 
-            />
+                component={Dashboard}
+            />            
         </Stack.Navigator>
       </NavigationContainer>
 
