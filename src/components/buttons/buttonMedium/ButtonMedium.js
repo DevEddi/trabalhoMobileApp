@@ -1,15 +1,15 @@
 import React, {useState} from 'react'
 import { View, Button, Text, Image} from 'react-native'
 
-import styles from './style'
+//import styles from './style'
 
 export default function ButtonMedium(props) {
  
   return (
-    <View style = {styles.botaoBox}>      
+    <View >      
       <Button        
-        onPress={props.chama}
-        title={props.nome}
+        onPress={props.pressButton}
+        title={props.name}
       />
     </View>
   );
