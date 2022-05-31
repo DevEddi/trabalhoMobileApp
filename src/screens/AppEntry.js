@@ -12,14 +12,14 @@ import SignUp from '../components/appEntry/signUp/SignUp';
 export default function AppEntry({ navigation }) {
   
 
-  const [entrada, setEntrada] = useState(Login)  
+  const [viewEnable, setViewEnable] = useState(Login)  
 
   function pressLogin(){
-    setEntrada(Login)
+    setViewEnable(Login)
 
   }
   function pressSignUp(){
-    setEntrada(SignUp)
+    setViewEnable(SignUp)
   }
 
   return (
@@ -38,9 +38,8 @@ export default function AppEntry({ navigation }) {
         title='SIGNUP'
         onPress={() => pressSignUp()}
       />
-      <View >
-        {entrada}
-        
+      <View>
+        {viewEnable}        
       </View>
      
       
