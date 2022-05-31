@@ -11,8 +11,8 @@ import {
   Switch,
 } from 'react-native';
 
-import ButtonTheme from '../buttonTheme/ButtonTheme';
 import styles from './style';
+import ButtonLarge from '../../buttons/buttonLarge/ButtonLarge';
 
 export default function FormAccount() {
 
@@ -126,14 +126,18 @@ export default function FormAccount() {
           </View>
           
           <View>
-            <ButtonTheme
-              screenDirection={() => {validetionFormOpenAccount()}}
-              nameButton="Open Account"      
-            />
-            <ButtonTheme
-              screenDirection={() => {resetOpenAccount()}}
-              nameButton="Reset Values"              
-            />
+            
+            <ButtonLarge
+              pressFunc = {() => {validetionFormOpenAccount()}}
+              nameToucha = 'Open Account'
+            
+            /> 
+            <ButtonLarge
+              pressFunc = {() => {validetionFormOpenAccount()}}
+              nameToucha = 'Reset Values'
+            
+            /> 
+            
           </View>                
     </View>
   );

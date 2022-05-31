@@ -1,16 +1,19 @@
 import React, {useState} from 'react'
-import { View, Button, Text, Image} from 'react-native'
+import { View, Button, Text, Image, TouchableOpacity} from 'react-native'
 
 import styles from './style'
 
 export default function ButtonLarge(props) {
  
   return (
-    <View style = {styles.botaoBox}>      
-      <Button        
-        onPress={props.chama}
-        title={props.nome}
-      />
+    <View>     
+      
+      <TouchableOpacity
+        onPress={props.pressFunc}      
+      >
+        <Text>{props.nameToucha}</Text>
+      </TouchableOpacity>
+      
     </View>
   );
 }
