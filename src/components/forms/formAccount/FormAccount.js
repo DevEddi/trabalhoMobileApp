@@ -125,8 +125,7 @@ export default function FormAccount() {
             />
           </View>
           
-          <View>
-            
+          <View>            
             <ButtonLarge
               pressFunc = {() => {validetionFormOpenAccount()}}
               nameToucha = 'Open Account'
@@ -136,8 +135,7 @@ export default function FormAccount() {
               pressFunc = {() => {validetionFormOpenAccount()}}
               nameToucha = 'Reset Values'
             
-            /> 
-            
+            />             
           </View>                
     </View>
   );
