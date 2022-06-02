@@ -6,12 +6,13 @@ import styles from './style'
 export default function ButtonLarge(props) {
  
   return (
-    <View>     
+    <View style={styles.viewLargeButton}>    
       
       <TouchableOpacity
+        style={styles.largeButton}
         onPress={props.pressFunc}      
       >
-        <Text>{props.nameToucha}</Text>
+        <Text style={styles.textLargeButton}>{props.nameToucha}</Text>
       </TouchableOpacity>
       
     </View>
