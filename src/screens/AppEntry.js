@@ -8,6 +8,9 @@ import {
 import ButtonSmall from '../components/buttons/buttonSmall/ButtonSmall';
 import Login from '../components/appEntry/login/Login';
 import SignUp from '../components/appEntry/signUp/SignUp';
+import ButtonMedium from '../components/buttons/buttonMedium/ButtonMedium'
+import ScreensStyles from '../styles/screensStyles/ScreensStyles'
+
 
 export default function AppEntry({ navigation }) {
   
@@ -23,24 +26,26 @@ export default function AppEntry({ navigation }) {
   }
 
   return (
-    <View >
-      <Text>App Entry</Text>
-      
+    <View style={ScreensStyles.containerLogin}>
+
       <ButtonSmall
         pressFunc = {() => navigation.navigate('Dashboard')}
         nameToucha = 'Dashboard'      
       />
-      <Button
-        title='LOGIN'
-        onPress={() => pressLogin()}
-      />
-      <Button
-        title='SIGNUP'
-        onPress={() => pressSignUp()}
-      />
       <View>
         {viewEnable}        
       </View>
+      <View style={ScreensStyles.buttonsLoginRow}>
+        <ButtonMedium          
+          pressFunc = {() => pressLogin()}
+          nameToucha = 'Login'         
+        />
+        <ButtonMedium
+          pressFunc = {() => pressSignUp()}
+          nameToucha = 'Sign Up'         
+        />
+      </View>
+      
      
       
     </View>

@@ -1,16 +1,18 @@
-import React, {useState} from 'react'
-import { View, Button, Text, Image} from 'react-native'
+import React from 'react'
+import { View, Text,  TouchableOpacity} from 'react-native'
 
-//import styles from './style'
+import styles from './style'
 
 export default function ButtonMedium(props) {
  
   return (
-    <View >      
-      <Button        
-        onPress={props.pressButton}
-        title={props.name}
-      />
+    <View  style={styles.viewMediumButton}>      
+      <TouchableOpacity
+        style={styles.mediumButton}
+        onPress={props.pressFunc}      
+      >
+        <Text style={styles.textMediumButton}>{props.nameToucha}</Text>
+      </TouchableOpacity>
     </View>
   );
 }

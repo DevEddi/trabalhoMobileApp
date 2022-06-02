@@ -12,6 +12,19 @@ const styles = StyleSheet.create({
     },
     componentsHome:{  
     },
+    containerLogin:{ 
+        flex: 1,             
+        backgroundColor: colors.greenPortalThree,
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+    },
+    buttonsLoginRow:{ 
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginLeft: 30,
+        marginRight: 30,   
+    },
     
 })
 

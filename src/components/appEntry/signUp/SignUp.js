@@ -5,43 +5,49 @@ import {
     StyleSheet,
   } from 'react-native';
   
+import styles from '../style' 
   
-  export default function SignUp() {
-    return (
-      <View >
-        <Text>Sign Up</Text>
+export default function SignUp() {
+  return (
+    <View  style={styles.container}>
+      <Text style={styles.text}>Sign Up</Text>
+      
+      <View>
+        <Text style={styles.textLabel}>Name:</Text>
         <TextInput
           style={styles.input}
-          placeholder="Name"
+          placeholder="Rick Sanches"
+          keyboardType='default'
 
         />
-        <TextInput
-          style={styles.input}
-          placeholder="Age"
 
-        />
+        <Text style={styles.textLabel}>Age:</Text>
         <TextInput
           style={styles.input}
-          placeholder="E-mail"
+          placeholder="28"
+          keyboardType='numeric'
+          maxLength={2}
+        />
 
-        />
+        <Text style={styles.textLabel}>E-mail:</Text>
         <TextInput
           style={styles.input}
-          placeholder="Password"
-          
+          placeholder="ricksanches@mail.com"
+          keyboardType='email-address'
         />
-        
-      </View>
-    );
-  }
-  
-  const styles = StyleSheet.create({
-    input: {
-      height: 40,
-      margin: 12,
-      borderWidth: 1,
-      padding: 10,
-    },
-  });
-  
+
+        <Text style={styles.textLabel}>Password:</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="*****"
+          keyboardType='default'
+          secureTextEntry={true}        
+        />
+        </View>
+      
+    </View>
+  );
+}
+
+
   

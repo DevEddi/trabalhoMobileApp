@@ -4,32 +4,35 @@ import {
     TextInput,
     StyleSheet,
   } from 'react-native';
-  
-  
-  export default function Login() {
-    return (
-      <View >
-        <Text>Login</Text>
+
+import styles from '../style' 
+import ButtonMedium from '../../buttons/buttonMedium/ButtonMedium';
+
+export default function Login() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Login</Text>
+      <View>
+        <Text style={styles.textLabel}>E-mail:</Text>
         <TextInput
           style={styles.input}
-          placeholder="E-mail"
+          placeholder="ricksanches@mail.com"
+          keyboardType='email-address'        
 
         />
+        <Text style={styles.textLabel}>Password:</Text>
         <TextInput
           style={styles.input}
-          placeholder="Password"
+          placeholder="*******"
+          keyboardType='default'
+          secureTextEntry={true}
           
         />
-        
+        <Text style={styles.textForgot}>Forgot password ?</Text>
+        <ButtonMedium/>
       </View>
-    );
-  }
-  
-  const styles = StyleSheet.create({
-    input: {
-      height: 40,
-      margin: 12,
-      borderWidth: 1,
-      padding: 10,
-    },
-  });
+      
+    </View>
+  );
+}
+
