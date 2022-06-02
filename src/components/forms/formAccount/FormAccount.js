@@ -13,7 +13,7 @@ import {
 
 import styles from './style';
 import ButtonLarge from '../../buttons/buttonLarge/ButtonLarge';
-
+import InputInfo from '../../inputs/inputInfo/InputInfo';
 export default function FormAccount() {
 
   const [name, setName] = useState(null);
@@ -65,22 +65,23 @@ export default function FormAccount() {
   return (    
     <View style={styles.container}>    
           <View>
+
             <Text style={styles.titleInputs}>Name:</Text>
-            <TextInput
+            <InputInfo
               value={name}
-              onChangeText={setName}            
-              style={styles.inputText}
-              placeholder="Digit your name"          
+              onChangeText={setName}  
+              keyType="default"
+              placeHolderName='Digit your name'
             />
+            
             <Text style={styles.titleInputs}>Age:</Text>
-            <TextInput
+            <InputInfo
               value={age}
               maxLength={2}
-              keyboardType="numeric"
-              onChangeText={setAge}            
-              style={styles.inputText}
-              placeholder="Digit your age"          
-            /> 
+              onChangeText={setAge}   
+              keyType="numeric"
+              placeHolderName='Digit your age'
+            />            
           </View>      
           
           <View>

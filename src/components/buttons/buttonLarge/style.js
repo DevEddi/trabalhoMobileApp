@@ -7,9 +7,8 @@ const styles = StyleSheet.create({
     },
     largeButton:{
         padding: 2,
-        margin: 6,
-        backgroundColor: colors.yellowMorty,
-        borderRadius: 30,
+        backgroundColor: colors.blueMorty,
+        
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -17,10 +16,11 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.37,
         shadowRadius: 7.49,
+        width: '100%'
     },
     textLargeButton:{
         fontSize: fonts.medium,
-        color: colors.blackRick,
+        color: colors.whiteRick,
         fontWeight: "bold",
         alignSelf: "center",
         textTransform: "uppercase",

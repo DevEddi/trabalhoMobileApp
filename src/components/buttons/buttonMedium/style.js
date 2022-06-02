@@ -3,9 +3,10 @@ import { colors, fonts } from '../../../styles';
 
 const styles = StyleSheet.create({
     viewMediumButton:{
+        
     },
     mediumButton:{
-        padding: 20,
+        padding: 15,
         backgroundColor: colors.titleRick,
         shadowColor: colors.greenPortalThree,
         shadowOffset: {
@@ -14,6 +15,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.37,
         shadowRadius: 7.49,
+        width: '100%',
         
     },
     textMediumButton:{

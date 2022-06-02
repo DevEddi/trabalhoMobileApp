@@ -16,8 +16,8 @@ export default function Dashboard() {
 
           if (route.name === 'ExamOne') {
             iconName = focused
-              ? 'location-outline'
-              : 'location-outline';
+              ? 'flask-outline'
+              : 'flask-outline';
           } else if (route.name === 'ExamTwo') {
             iconName = focused ? 'cash-outline' : 'cash-outline';
           }
@@ -25,17 +25,17 @@ export default function Dashboard() {
           // You can return any component that you like here!
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: 'tomato',
-        tabBarInactiveTintColor: 'gray',
+        tabBarActiveTintColor: '#013A71',
+        tabBarInactiveTintColor: '#D2E054',
       })}
     >
       <Tab.Screen 
-        name="ExamOne"
+        name="Rick Phrases"
         component={ExamOne}
         options={{ headerShown: false }} 
       />
       <Tab.Screen
-        name="ExamTwo"
+        name="Bank Rick"
         component={ExamTwo}
         options={{ headerShown: false }} 
       />

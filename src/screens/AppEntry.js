@@ -26,14 +26,13 @@ export default function AppEntry({ navigation }) {
   }
 
   return (
-    <View style={ScreensStyles.containerLogin}>
-
-      <ButtonSmall
+    <View style={ScreensStyles.containerLogin}>      
+      <View>
+        {viewEnable}
+        <ButtonSmall
         pressFunc = {() => navigation.navigate('Dashboard')}
         nameToucha = 'Dashboard'      
-      />
-      <View>
-        {viewEnable}        
+      />        
       </View>
       <View style={ScreensStyles.buttonsLoginRow}>
         <ButtonMedium          

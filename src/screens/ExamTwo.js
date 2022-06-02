@@ -1,18 +1,16 @@
 import {
-  StyleSheet,
-  Text,
   View
 } from 'react-native';
 
-import BankRick from '../components/bankRick/BankRick';
+
+import FormAccount from '../components/forms/formAccount/FormAccount';
+import ScreensStyles from '../styles/screensStyles/ScreensStyles'
+
 
 export default function ExamTwo() {
   return (
-    <View >
-      <Text>ExamTwo</Text>
-      <BankRick
-      
-      />
+    <View style={ScreensStyles.containerExamTwo}>
+      <FormAccount/>
     </View>
   );
 }

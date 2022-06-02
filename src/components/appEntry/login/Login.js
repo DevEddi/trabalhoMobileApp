@@ -29,7 +29,7 @@ export default function Login() {
           
         />
         <Text style={styles.textForgot}>Forgot password ?</Text>
-        <ButtonMedium/>
+        
       </View>
       
     </View>

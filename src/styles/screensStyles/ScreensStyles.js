@@ -25,7 +25,17 @@ const styles = StyleSheet.create({
         marginLeft: 30,
         marginRight: 30,   
     },
-    
+    containerExamOne:{
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        backgroundColor: colors.blueMorty,
+        alignItems: 'center',        
+    },
+    componentsExamOne:{  
+    },
+    rowExamOne:{  
+    },
 })
 
 export default styles
