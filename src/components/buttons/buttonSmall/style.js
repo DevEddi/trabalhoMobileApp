@@ -6,18 +6,18 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     smallButton:{
-        padding: 2,
+        padding: 20,
         margin: 6,
-        backgroundColor: colors.blueMorty,
+        backgroundColor: colors.titleRick,
         borderRadius: 30,
-        shadowColor: "#000",
+        shadowColor: colors.greenPortalThree,
         shadowOffset: {
             width: 0,
             height: 6,
         },
         shadowOpacity: 0.37,
         shadowRadius: 7.49,
-        width: '50%',
+        width: '100%',
         
     },
     textSmallButton:{

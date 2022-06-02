@@ -6,8 +6,7 @@ import RouteStack from './src/routes/RouteStack';
 
 export default function App() {
   return (
-    <RouteStack
-    
+    <RouteStack  
     />
     
   );
