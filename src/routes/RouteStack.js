@@ -3,10 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-import AppEntry from '../screens/AppEntry';
 import Dashboard from '../screens/Dashboard';
 import Home from '../screens/Home';
+import Login from '../screens/Login';
+import SignUp from '../screens/SignUp';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,15 +17,20 @@ export default function RouteStack() {
             <Stack.Screen
                 name="Home"
                 component={Home}
-            />
-            <Stack.Screen
-                name="AppEntry"
-                component={AppEntry}
+                options={{ headerShown: false }} 
             />
             <Stack.Screen
                 name="Dashboard"
                 component={Dashboard}
-            />            
+            />
+            <Stack.Screen
+                name="Login"
+                component={Login}
+            /> 
+            <Stack.Screen
+                name="SignUp"
+                component={SignUp}
+            />             
         </Stack.Navigator>
       </NavigationContainer>
 

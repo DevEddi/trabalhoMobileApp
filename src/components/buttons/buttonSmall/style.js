@@ -4,12 +4,13 @@ import { colors, fonts } from '../../../styles';
 const styles = StyleSheet.create({
     viewSmallButton:{
         alignItems: 'center',
+        
     },
     smallButton:{
-        padding: 20,
-        margin: 6,
+        padding: 8,
+        margin: 3,
         backgroundColor: colors.titleRick,
-        borderRadius: 30,
+        borderRadius: 10,
         shadowColor: colors.greenPortalThree,
         shadowOffset: {
             width: 0,
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.37,
         shadowRadius: 7.49,
-        width: '100%',
+        width: '90%',
         
     },
     textSmallButton:{

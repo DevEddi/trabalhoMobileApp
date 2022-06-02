@@ -7,8 +7,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'space-around',
-        backgroundColor: colors.greenPortalThree,
-        alignItems: 'center',        
+        backgroundColor: colors.greenPortalThree,       
     },
     componentsHome:{  
     },

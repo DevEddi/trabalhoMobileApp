@@ -10,13 +10,19 @@ export default function Home({navigation}) {
 
       <ImageHome
         
-      />     
-    
-      <ButtonSmall
-        style={ScreensStyles.containerHome}          
-        pressFunc = {() => navigation.navigate('AppEntry')}
-        nameToucha = 'Next'      
-      />
+      /> 
+      <View>
+        <ButtonSmall
+          style={ScreensStyles.containerHome}          
+          pressFunc = {() => navigation.navigate('Login')}
+          nameToucha = 'Login'      
+        />
+        <ButtonSmall
+          style={ScreensStyles.containerHome}          
+          pressFunc = {() => navigation.navigate('SignUp')}
+          nameToucha = 'Sign Up'      
+        />
+      </View>
      
       
     </View>

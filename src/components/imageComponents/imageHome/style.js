@@ -3,8 +3,9 @@ import { colors, fonts } from '../../../styles';
 
 const styles = StyleSheet.create({
     imageStyle:{
-        width: 470,
-        height: 470
+        width: 370,
+        height: 370,
+        alignSelf: 'center',
     }
 })
 
