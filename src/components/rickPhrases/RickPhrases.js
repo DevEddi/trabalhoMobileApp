@@ -11,6 +11,7 @@ import styles from './style'
 import ButtonMedium from '../buttons/buttonMedium/ButtonMedium'
 import rickNormal from '../../images/rickNormal.png'
 import rickCrazy from '../../images/rickCrazy.png'
+import TitleName from '../title/titleName/TitleName'
 
 
 
@@ -34,7 +35,9 @@ export default function RickPhrases() {
   }
   return (
     <View style={styles.container}>
-      
+      <TitleName
+        titlename='Phrases Rick'
+      />
       <View >
         <Image style={styles.image} source={rick} />       
         <Text style={styles.text}>{phrase}</Text>

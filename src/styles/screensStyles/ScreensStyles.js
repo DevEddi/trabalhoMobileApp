@@ -13,17 +13,13 @@ const styles = StyleSheet.create({
     componentsHome:{  
     },
     containerLogin:{ 
-        flex: 1,             
-        backgroundColor: colors.greenPortalThree,
-        flexDirection: 'column',
+        flex: 1,
         justifyContent: 'space-around',
     },
     buttonsLoginRow:{ 
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginLeft: 30,
-        marginRight: 30,   
     },
     containerExamOne:{
         flex: 1,
@@ -33,6 +29,16 @@ const styles = StyleSheet.create({
         alignItems: 'center',        
     },
     componentsExamOne:{  
+    },
+    rowExamOne:{  
+    },
+    containerExamTwo:{
+        flex: 1,
+        margin: 10, 
+        flexDirection: 'column',
+        justifyContent: 'space-around',   
+    },
+    componentsExamTwo:{  
     },
     rowExamOne:{  
     },

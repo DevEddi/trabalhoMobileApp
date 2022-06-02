@@ -4,7 +4,10 @@ import { colors, fonts } from '../../../styles';
 const styles = StyleSheet.create({
     title:{
         fontSize: fonts.large,
-        color: colors.blackRick,
+        color: colors.yellowMorty,
+        alignSelf: 'center',
+        fontSize: fonts.large,
+        color: colors.blueMorty,
     }
 })
 

@@ -3,6 +3,7 @@ import { colors } from '../../../styles';
 
 export default StyleSheet.create({
   container: {
+    paddingBottom: 30,
   },
   
   titleInputs:{

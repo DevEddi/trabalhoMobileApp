@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import {Picker} from '@react-native-picker/picker';
 import Slider from '@react-native-community/slider';
+import { KeyboardAvoidingView } from 'react-native';
 
 import { 
   Text,
@@ -14,6 +15,8 @@ import {
 import styles from './style';
 import ButtonLarge from '../../buttons/buttonLarge/ButtonLarge';
 import InputInfo from '../../inputs/inputInfo/InputInfo';
+import TitleName from '../../title/titleName/TitleName';
+
 export default function FormAccount() {
 
   const [name, setName] = useState(null);
@@ -63,8 +66,12 @@ export default function FormAccount() {
   }
 
   return (    
-    <View style={styles.container}>    
-          <View>
+    <KeyboardAvoidingView>
+      <View>
+          <TitleName
+            titlename='Bank Rick'
+          />    
+          <View style={styles.container}>
 
             <Text style={styles.titleInputs}>Name:</Text>
             <InputInfo
@@ -84,7 +91,7 @@ export default function FormAccount() {
             />            
           </View>      
           
-          <View>
+          <View style={styles.container}>
             <Text style={styles.titleInputs}>Gender:</Text>
             <Picker
               style={styles.picker}
@@ -100,9 +107,9 @@ export default function FormAccount() {
                 label="Woman"
                 value="Woman" />
             </Picker>
-          </View>
+          </View >
 
-          <View >
+          <View style={styles.container}>
               <Text style={styles.titleInputs}>Your Limit: R$ {parseFloat(limitAccount).toFixed(2)}</Text>
               <Slider
                 style={styles.slider}
@@ -114,7 +121,7 @@ export default function FormAccount() {
               />
           </View>
 
-          <View>
+          <View style={styles.container}>
             <Text style={styles.titleInputs}>Estudante:</Text>
             <Switch
               style={styles.switch}
@@ -126,7 +133,7 @@ export default function FormAccount() {
             />
           </View>
           
-          <View>            
+          <View style={styles.container}>            
             <ButtonLarge
               pressFunc = {() => {validetionFormOpenAccount()}}
               nameToucha = 'Open Account'
@@ -139,6 +146,8 @@ export default function FormAccount() {
             />             
           </View>                
     </View>
+
+    </KeyboardAvoidingView>
   );
 }
 

@@ -6,8 +6,8 @@ import styles from './style'
 export default function TitleName(props) {
  
   return (
-    <View style={styles.title}>      
-      <Text>{props.titlename}</Text>
+    <View >      
+      <Text style={styles.title}>{props.titlename}</Text>
     </View>
   );
 }

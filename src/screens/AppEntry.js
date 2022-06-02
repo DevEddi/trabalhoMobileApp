@@ -26,14 +26,8 @@ export default function AppEntry({ navigation }) {
   }
 
   return (
-    <View style={ScreensStyles.containerLogin}>      
-      <View>
-        {viewEnable}
-        <ButtonSmall
-        pressFunc = {() => navigation.navigate('Dashboard')}
-        nameToucha = 'Dashboard'      
-      />        
-      </View>
+    <View style={ScreensStyles.containerLogin}>
+
       <View style={ScreensStyles.buttonsLoginRow}>
         <ButtonMedium          
           pressFunc = {() => pressLogin()}
@@ -43,7 +37,15 @@ export default function AppEntry({ navigation }) {
           pressFunc = {() => pressSignUp()}
           nameToucha = 'Sign Up'         
         />
+      </View>      
+      <View>
+        {viewEnable}
+        <ButtonSmall
+        pressFunc = {() => navigation.navigate('Dashboard')}
+        nameToucha = 'Dashboard'      
+      />        
       </View>
+      
       
      
       
