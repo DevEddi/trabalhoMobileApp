@@ -5,13 +5,15 @@ import {
   Image,
   Button
 } from 'react-native'
+import styles from './style'
 
 import FormAccount from '../forms/formAccount/FormAccount';
+
 
 export default function BankRick() {    
   
   return (
-    <View >
+    <View style={styles.container}>
       <FormAccount/>
     </View>
   );
