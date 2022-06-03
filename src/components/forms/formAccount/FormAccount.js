@@ -15,7 +15,6 @@ import {
 import styles from './style';
 import ButtonLarge from '../../buttons/buttonLarge/ButtonLarge';
 import InputInfo from '../../inputs/inputInfo/InputInfo';
-import TitleName from '../../title/titleName/TitleName';
 
 export default function FormAccount() {
 
@@ -27,25 +26,25 @@ export default function FormAccount() {
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
   const showAlert = (name, age, selectedGender, limitAccount, enable) =>
-  Alert.alert(
-    "Confirm your data",
-        'Nome: ' + name + '\n' +
-        'Age: ' + age + '\n' + 
-        'Gender: ' + selectedGender + '\n' +
-        'Limit: ' + parseFloat(limitAccount).toFixed(2) + '\n' +
-        'Student: ' + enable,
-    [
-      {
-        text: "Confirm",
-        onPress: () => Alert.alert("Thanks Open Account"),
-        style: "cancel",
-      },
-      {
-        text: "Cancel",
-        onPress: () =>  resetOpenAccount(),
-        style: "cancel",
-      },
-    ]    
+    Alert.alert(
+      "Confirm your data",
+          'Nome: ' + name + '\n' +
+          'Age: ' + age + '\n' + 
+          'Gender: ' + selectedGender + '\n' +
+          'Limit: ' + parseFloat(limitAccount).toFixed(2) + '\n' +
+          'Student: ' + enable,
+      [
+        {
+          text: "Confirm",
+          onPress: () => Alert.alert("Thanks Open Account"),
+          style: "cancel",
+        },
+        {
+          text: "Cancel",
+          onPress: () =>  resetOpenAccount(),
+          style: "cancel",
+        },
+      ]    
   );
 
   function validetionFormOpenAccount(){
@@ -68,7 +67,7 @@ export default function FormAccount() {
   return (    
     <KeyboardAvoidingView>
       <View style={styles.container}>
-          <Text style={styles.title}>Bank Rick</Text>   
+          <Text style={styles.title}>Bank Morty</Text>   
           <View >
 
             <Text style={styles.titleInputs}>Name:</Text>
@@ -139,13 +138,12 @@ export default function FormAccount() {
             
             /> 
             <ButtonLarge
-              pressFunc = {() => {validetionFormOpenAccount()}}
+              pressFunc = {() => {resetOpenAccount()}}
               nameToucha = 'Reset Values'
             
             />             
           </View>                
     </View>
-
     </KeyboardAvoidingView>
   );
 }

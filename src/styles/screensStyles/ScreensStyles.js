@@ -34,12 +34,12 @@ const styles = StyleSheet.create({
     containerLogin:{
         flex: 1, 
         justifyContent: 'center',  
-        backgroundColor: colors.whiteRick
+        backgroundColor: colors.greenPortalThree,
     },
     containerSignUp:{
         flex: 1, 
         justifyContent: 'center',  
-        backgroundColor: colors.whiteRick,
+        backgroundColor: colors.greenPortalThree,
 
     },
     signUpComponents:{
