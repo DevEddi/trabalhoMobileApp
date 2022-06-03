@@ -1,8 +1,8 @@
+import React, { useState } from 'react';
 import {
     Text,
     View,
     TextInput,
-    StyleSheet,
     TouchableOpacity,
     Image,
     ScrollView,
@@ -13,6 +13,20 @@ import { KeyboardAvoidingView } from 'react-native';
 import styles from '../style' 
   
 export default function SignUp(props) {
+
+  const [name, setName] = useState(null)
+  const [age, setAge] = useState(null)
+  const [email, setEmail] = useState(null)
+  const [password, setPassword] = useState(null)
+
+  function new_user(){       
+    if (name != null &&  age != null && email != null && password != null){
+        props.sendForm()
+    }
+  }
+
+
+
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -32,6 +46,8 @@ export default function SignUp(props) {
             style={styles.input}
             placeholder="Rick Sanches"
             keyboardType='default'
+            value={name}
+            onChangeText={setName} 
 
           />
 
@@ -41,6 +57,8 @@ export default function SignUp(props) {
             placeholder="28"
             keyboardType='numeric'
             maxLength={2}
+            value={age}
+            onChangeText={setAge} 
           />
 
           <Text style={styles.textLabel}>E-mail:</Text>
@@ -48,6 +66,8 @@ export default function SignUp(props) {
             style={styles.input}
             placeholder="ricksanches@mail.com"
             keyboardType='email-address'
+            value={email}
+            onChangeText={setEmail} 
           />
 
           <Text style={styles.textLabel}>Password:</Text>
@@ -55,15 +75,17 @@ export default function SignUp(props) {
             style={styles.input}
             placeholder="*****"
             keyboardType='default'
-            secureTextEntry={true}        
+            secureTextEntry={true}   
+            value={password}
+            onChangeText={setPassword}      
           />
           <TouchableOpacity
-            onPress={props.sendForm}
+            onPress={new_user}
             style={styles.buttonStyle}
           >           
             <Text style={styles.textButton}>{props.nameTouch}</Text>
           </TouchableOpacity>   
-          </View>       
+          </View>      
         
       </View>
       </ScrollView> 

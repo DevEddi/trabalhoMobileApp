@@ -77,7 +77,7 @@ export default function FormAccount() {
 
               <Text style={styles.titleInputs}>Name:</Text>
               <InputInfo
-              style={styles.inputs}
+                style={styles.inputs}
                 value={name}
                 onChangeText={setName}  
                 keyType="default"

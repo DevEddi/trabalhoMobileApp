@@ -1,3 +1,4 @@
+import React, { useState} from 'react';
 import {
     Text,
     View,
@@ -13,6 +14,19 @@ import { KeyboardAvoidingView } from 'react-native';
 import styles from '../style' 
 
 export default function Login(props) {
+
+  const [email, setEmail] = useState(null)  
+  const [password, setPassword] = useState(null)
+
+  function acessUser(){       
+    if (email != null && password != null){
+        let emailUser = 'rick@gmail.com'
+        let passwordUser = 123456
+        if(email == emailUser && password == passwordUser){
+          props.sendForm()
+        }
+    }
+  }
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -30,7 +44,9 @@ export default function Login(props) {
         <TextInput
           style={styles.input}
           placeholder="ricksanches@mail.com"
-          keyboardType='email-address'        
+          keyboardType='email-address'    
+          value={email}
+          onChangeText={setEmail}     
 
         />
         <Text style={styles.textLabel}>Password:</Text>
@@ -39,11 +55,13 @@ export default function Login(props) {
           placeholder="*******"
           keyboardType='default'
           secureTextEntry={true}
+          value={password}
+          onChangeText={setPassword}
           
         />
         <Text style={styles.textForgot}>Forgot password ?</Text>
         <TouchableOpacity
-          onPress={props.sendForm}
+          onPress={acessUser}
           style={styles.buttonStyle}
         >           
           <Text style={styles.textButton}>{props.nameTouch}</Text>
