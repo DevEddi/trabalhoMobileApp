@@ -9,8 +9,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         backgroundColor: colors.greenPortalThree,       
     },
-    componentsHome:{  
-    },
     containerLogin:{ 
         flex: 1,
         justifyContent: 'space-around',
@@ -27,20 +25,38 @@ const styles = StyleSheet.create({
         backgroundColor: colors.blueMorty,
         alignItems: 'center',        
     },
-    componentsExamOne:{  
-    },
-    rowExamOne:{  
-    },
     containerExamTwo:{
         flex: 1,
-        margin: 10, 
         flexDirection: 'column',
         justifyContent: 'space-around',   
+        backgroundColor: colors.blueMorty,
     },
-    componentsExamTwo:{  
+    containerLogin:{
+        flex: 1, 
+        flexDirection: 'column',
+        justifyContent: 'space-between',   
+        backgroundColor: colors.whiteRick
     },
-    rowExamOne:{  
+    containerSignUp:{
+        flex: 1, 
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        backgroundColor: colors.whiteRick  
     },
+    signUpComponents:{
+        alignSelf: 'flex-start',
+        backgroundColor: colors.greenPortal,
+        width: '50%',
+        height: 100,
+        borderBottomRightRadius: 100,
+    },
+    loginComponents:{
+        alignSelf: 'flex-start',
+        backgroundColor: colors.greenPortal,
+        width: '50%',
+        height: 100,
+        borderBottomRightRadius: 100,
+    }
 })
 
 export default styles

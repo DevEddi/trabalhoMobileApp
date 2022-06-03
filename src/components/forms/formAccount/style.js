@@ -1,30 +1,42 @@
 import { StyleSheet } from 'react-native';
-import { colors } from '../../../styles';
+import { colors, fonts } from '../../../styles';
 
 export default StyleSheet.create({
   container: {
-    paddingBottom: 30,
+    margin: 14,
   },
-  
+  title:{
+    color: colors.whiteRick,
+    fontSize: 42,
+    fontWeight: 'bold',
+    alignSelf: 'center',
+  } , 
   titleInputs:{
     margin:4, 
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: colors.whiteRick,
+    marginLeft: 10,
   },
   picker:{
-    backgroundColor: colors.brownieRick,
-    color: '#fff',
+    backgroundColor: colors.yellowMorty,
+    color: colors.blackRick,
+    marginTop: 10,
+    marginBottom: 10,
   },
   pickerItem:{
-    backgroundColor: colors.brownieRick,
-    color: '#fff',
+    backgroundColor: colors.yellowMortyk,
+    color: colors.blackRick,
   },
   slider:{
     width: '100%',
     height: 40,
+    marginTop: 10,
+    marginBottom: 10,
     
   },
   switch:{
-    padding:10,
+    padding:5,
+    alignSelf: 'flex-start',
   }
 });
 

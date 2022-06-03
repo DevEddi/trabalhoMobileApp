@@ -67,14 +67,13 @@ export default function FormAccount() {
 
   return (    
     <KeyboardAvoidingView>
-      <View>
-          <TitleName
-            titlename='Bank Rick'
-          />    
-          <View style={styles.container}>
+      <View style={styles.container}>
+          <Text style={styles.title}>Bank Rick</Text>   
+          <View >
 
             <Text style={styles.titleInputs}>Name:</Text>
             <InputInfo
+            style={styles.inputs}
               value={name}
               onChangeText={setName}  
               keyType="default"
@@ -91,7 +90,7 @@ export default function FormAccount() {
             />            
           </View>      
           
-          <View style={styles.container}>
+          <View >
             <Text style={styles.titleInputs}>Gender:</Text>
             <Picker
               style={styles.picker}
@@ -109,31 +108,31 @@ export default function FormAccount() {
             </Picker>
           </View >
 
-          <View style={styles.container}>
+          <View >
               <Text style={styles.titleInputs}>Your Limit: R$ {parseFloat(limitAccount).toFixed(2)}</Text>
               <Slider
                 style={styles.slider}
                 minimumValue={0.00}
                 maximumValue={1000.00}
                 onValueChange={setLimitAccount}
-                minimumTrackTintColor="#f4511e"
-                maximumTrackTintColor="#000000"
+                minimumTrackTintColor="#F7EA46"
+                maximumTrackTintColor="#fff"
               />
           </View>
 
-          <View style={styles.container}>
+          <View >
             <Text style={styles.titleInputs}>Estudante:</Text>
             <Switch
               style={styles.switch}
               trackColor={{ false: "#767577", true: "#9CB4CC" }}
-              thumbColor={isEnabled ? "#f4511e" : "#f4f3f4"}
+              thumbColor={isEnabled ? "#F7EA46" : "#f4f3f4"}
               ios_backgroundColor="#3e3e3e"
               onValueChange={toggleSwitch}
               value={isEnabled}
             />
           </View>
           
-          <View style={styles.container}>            
+          <View >            
             <ButtonLarge
               pressFunc = {() => {validetionFormOpenAccount()}}
               nameToucha = 'Open Account'

@@ -11,7 +11,6 @@ import styles from './style'
 import ButtonMedium from '../buttons/buttonMedium/ButtonMedium'
 import rickNormal from '../../images/rickNormal.png'
 import rickCrazy from '../../images/rickCrazy.png'
-import TitleName from '../title/titleName/TitleName'
 
 
 
@@ -35,25 +34,23 @@ export default function RickPhrases() {
   }
   return (
     <View style={styles.container}>
-      <TitleName
-        titlename='Phrases Rick'
-      />
+      <Text style={styles.title}>Tips Rick</Text>   
       <View >
         <Image style={styles.image} source={rick} />       
         <Text style={styles.text}>{phrase}</Text>
       </View>
 
       <View style={styles.buttonsRow}>
-          <ButtonMedium
-            pressFunc = {sendPhrase}
-            nameToucha = 'Send'
-          />
-          <ButtonMedium
-            pressFunc = {resetPhrase}
-            nameToucha = 'Reset'
-            
-          />   
-        </View> 
+        <ButtonMedium
+          pressFunc = {sendPhrase}
+          nameToucha = 'Tips'
+        />
+        <ButtonMedium
+          pressFunc = {resetPhrase}
+          nameToucha = 'Reset'
+          
+        />   
+      </View> 
     </View>
   );
 }

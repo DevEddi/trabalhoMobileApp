@@ -2,16 +2,17 @@ import {
     Text,
     View,
     TextInput,
-    StyleSheet,
+    TouchableOpacity
   } from 'react-native';
 
-import styles from '../style' 
-import ButtonMedium from '../../buttons/buttonMedium/ButtonMedium';
+import { KeyboardAvoidingView } from 'react-native';
 
-export default function Login() {
+import styles from '../style' 
+
+export default function Login(props) {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Login</Text>
+    <KeyboardAvoidingView>
+      <View style={styles.container}>
       <View>
         <Text style={styles.textLabel}>E-mail:</Text>
         <TextInput
@@ -29,10 +30,16 @@ export default function Login() {
           
         />
         <Text style={styles.textForgot}>Forgot password ?</Text>
-        
+        <TouchableOpacity
+          onPress={props.sendForm}
+          style={styles.buttonStyle}
+        >           
+          <Text style={styles.textButton}>{props.nameTouch}</Text>
+        </TouchableOpacity>
       </View>
       
     </View>
+    </KeyboardAvoidingView>
   );
 }
 

@@ -1,4 +1,4 @@
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -16,26 +16,26 @@ export default function Dashboard() {
 
           if (route.name === 'ExamOne') {
             iconName = focused
-              ? 'flask-outline'
-              : 'flask-outline';
+              ? 'self_improvement'
+              : 'self_improvement';
           } else if (route.name === 'ExamTwo') {
-            iconName = focused ? 'cash-outline' : 'cash-outline';
+            iconName = focused ? 'account_balance' : 'account_balance';
           }
 
           // You can return any component that you like here!
-          return <Ionicons name={iconName} size={size} color={color} />;
+          return <MaterialIcons name={iconName} size={size} color={color} />;
         },
         tabBarActiveTintColor: '#013A71',
         tabBarInactiveTintColor: '#D2E054',
       })}
     >
       <Tab.Screen 
-        name="Rick Phrases"
+        name="RickPhrases"
         component={ExamOne}
         options={{ headerShown: false }} 
       />
       <Tab.Screen
-        name="Bank Rick"
+        name="BankRick"
         component={ExamTwo}
         options={{ headerShown: false }} 
       />

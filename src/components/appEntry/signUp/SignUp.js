@@ -3,16 +3,17 @@ import {
     View,
     TextInput,
     StyleSheet,
+    TouchableOpacity,
   } from 'react-native';
+
+import { KeyboardAvoidingView } from 'react-native';
   
 import styles from '../style' 
   
-export default function SignUp() {
+export default function SignUp(props) {
   return (
-    <View  style={styles.container}>
-      <Text style={styles.text}>Sign Up</Text>
-      
-      <View>
+    <KeyboardAvoidingView>
+      <View  style={styles.container}>     
         <Text style={styles.textLabel}>Name:</Text>
         <TextInput
           style={styles.input}
@@ -43,9 +44,15 @@ export default function SignUp() {
           keyboardType='default'
           secureTextEntry={true}        
         />
-        </View>
+        <TouchableOpacity
+          onPress={props.sendForm}
+          style={styles.buttonStyle}
+        >           
+          <Text style={styles.textButton}>{props.nameTouch}</Text>
+        </TouchableOpacity>        
       
     </View>
+    </KeyboardAvoidingView>
   );
 }
 

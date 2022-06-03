@@ -22,14 +22,37 @@ export default function RouteStack() {
             <Stack.Screen
                 name="Dashboard"
                 component={Dashboard}
+                options={{ headerShown: false }} 
             />
             <Stack.Screen
                 name="Login"
                 component={Login}
+                options={{ title: 'Back',
+                headerStyle: {
+                    backgroundColor: '#1C8D44',
+                  },
+                  headerTintColor: '#fff',
+                  headerTitleStyle: {
+                    fontWeight: 'bold',
+                  },
+                  headerMode: 'none',
+                cardStyle: { shadowColor: 'transparent' },
+             }}
             /> 
             <Stack.Screen
                 name="SignUp"
                 component={SignUp}
+                options={{ title: 'Back',
+                headerStyle: {
+                    backgroundColor: '#1C8D44',
+                  },
+                  headerTintColor: '#fff',
+                  headerTitleStyle: {
+                    fontWeight: 'bold',
+                  },
+                  headerMode: 'none',
+                cardStyle: { shadowColor: 'transparent' },
+            }}
             />             
         </Stack.Navigator>
       </NavigationContainer>
