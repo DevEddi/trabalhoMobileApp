@@ -1,24 +1,24 @@
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import { Button } from 'react-native'
 import ExamOne from './ExamOne'
 import ExamTwo from './ExamTwo'
-
+import ScreensStyles from '../styles/screensStyles/ScreensStyles';
 const Tab = createBottomTabNavigator();
 
-export default function Dashboard() {
+export default function Dashboard({ navigation }) {
   return (
     <Tab.Navigator       
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
 
-          if (route.name === 'RickPhrases') {
+          if (route.name === 'Tips') {
             iconName = focused
               ? 'ear-outline'
               : 'ear-outline';
-          } else if (route.name === 'BankRick') {
+          } else if (route.name === 'Bank Morty') {
             iconName = focused ? 'home-outline' : 'home-outline';
           }
 
@@ -28,17 +28,70 @@ export default function Dashboard() {
         tabBarActiveTintColor: '#013A71',
         tabBarInactiveTintColor: 'gray',
         
+        
       })}
     >
       <Tab.Screen 
-        name="RickPhrases"
+        name="Tips"
         component={ExamOne}
-        options={{ headerShown: false }} 
+        options={{ headerShown: true,
+          headerTitle: 'Dashboard',
+          headerStyle: {
+            backgroundColor: '#013A71',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          style: { 
+            backgroundColor: '#fff',
+            shadowColor: 'transparent',
+            shadowRadius: 0,
+            shadowOffset: {
+                height: 0,
+            }
+           },
+          
+          headerRight: () => (
+            <Button
+              onPress={() => navigation.navigate('Home')}
+              title="Sair"
+              color="#f11"
+              style={ScreensStyles.buttomHeader}
+            />
+          ),
+        }} 
       />
       <Tab.Screen
-        name="BankRick"
+        name="Bank Morty"
         component={ExamTwo}
-        options={{ headerShown: false }} 
+        options={{ headerShown: true,
+          headerTitle: 'Dashboard',
+          headerStyle: {
+            backgroundColor: '#013A71',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          style: { 
+            backgroundColor: '#fff',
+            shadowColor: 'transparent',
+            shadowRadius: 0,
+            shadowOffset: {
+                height: 0,
+            }
+           },
+          
+          headerRight: () => (
+            <Button
+              onPress={() => navigation.navigate('Home')}
+              title="Sair"
+              color="#f11"
+              style={ScreensStyles.buttomHeader}
+            />
+          ),
+        }} 
       />
     </Tab.Navigator>
   );

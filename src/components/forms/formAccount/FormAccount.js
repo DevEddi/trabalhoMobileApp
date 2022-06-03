@@ -10,6 +10,7 @@ import {
   TextInput,
   Alert,
   Switch,
+  ScrollView,
 } from 'react-native';
 
 import styles from './style';
@@ -65,85 +66,90 @@ export default function FormAccount() {
   }
 
   return (    
-    <KeyboardAvoidingView>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      keyboardVerticalOffset={130}
+    >
+     <ScrollView>
       <View style={styles.container}>
-          <Text style={styles.title}>Bank Morty</Text>   
-          <View >
+            <Text style={styles.title}>Bank Morty</Text>   
+            <View >
 
-            <Text style={styles.titleInputs}>Name:</Text>
-            <InputInfo
-            style={styles.inputs}
-              value={name}
-              onChangeText={setName}  
-              keyType="default"
-              placeHolderName='Digit your name'
-            />
-            
-            <Text style={styles.titleInputs}>Age:</Text>
-            <InputInfo
-              value={age}
-              maxLength={2}
-              onChangeText={setAge}   
-              keyType="numeric"
-              placeHolderName='Digit your age'
-            />            
-          </View>      
-          
-          <View >
-            <Text style={styles.titleInputs}>Gender:</Text>
-            <Picker
-              style={styles.picker}
-              selectedValue={selectedGender}
-              onValueChange={(itemValue, itemIndex) => setSelectedGender(itemValue)              
-            }>
-              <Picker.Item
-                style={styles.pickerItem}
-                label="Man"
-                value="Man" />
-              <Picker.Item 
-                style={styles.pickerItem}
-                label="Woman"
-                value="Woman" />
-            </Picker>
-          </View >
-
-          <View >
-              <Text style={styles.titleInputs}>Your Limit: R$ {parseFloat(limitAccount).toFixed(2)}</Text>
-              <Slider
-                style={styles.slider}
-                minimumValue={0.00}
-                maximumValue={1000.00}
-                onValueChange={setLimitAccount}
-                minimumTrackTintColor="#F7EA46"
-                maximumTrackTintColor="#fff"
+              <Text style={styles.titleInputs}>Name:</Text>
+              <InputInfo
+              style={styles.inputs}
+                value={name}
+                onChangeText={setName}  
+                keyType="default"
+                placeHolderName='Digit your name'
               />
-          </View>
+              
+              <Text style={styles.titleInputs}>Age:</Text>
+              <InputInfo
+                value={age}
+                maxLength={2}
+                onChangeText={setAge}   
+                keyType="numeric"
+                placeHolderName='Digit your age'
+              />            
+            </View>      
+            
+            <View >
+              <Text style={styles.titleInputs}>Gender:</Text>
+              <Picker
+                style={styles.picker}
+                selectedValue={selectedGender}
+                onValueChange={(itemValue, itemIndex) => setSelectedGender(itemValue)              
+              }>
+                <Picker.Item
+                  style={styles.pickerItem}
+                  label="Man"
+                  value="Man" />
+                <Picker.Item 
+                  style={styles.pickerItem}
+                  label="Woman"
+                  value="Woman" />
+              </Picker>
+            </View >
 
-          <View >
-            <Text style={styles.titleInputs}>Estudante:</Text>
-            <Switch
-              style={styles.switch}
-              trackColor={{ false: "#767577", true: "#9CB4CC" }}
-              thumbColor={isEnabled ? "#F7EA46" : "#f4f3f4"}
-              ios_backgroundColor="#3e3e3e"
-              onValueChange={toggleSwitch}
-              value={isEnabled}
-            />
-          </View>
-          
-          <View >            
-            <ButtonLarge
-              pressFunc = {() => {validetionFormOpenAccount()}}
-              nameToucha = 'Open Account'
+            <View >
+                <Text style={styles.titleInputs}>Your Limit: R$ {parseFloat(limitAccount).toFixed(2)}</Text>
+                <Slider
+                  style={styles.slider}
+                  minimumValue={0.00}
+                  maximumValue={1000.00}
+                  onValueChange={setLimitAccount}
+                  minimumTrackTintColor="#F7EA46"
+                  maximumTrackTintColor="#fff"
+                />
+            </View>
+
+            <View >
+              <Text style={styles.titleInputs}>Estudante:</Text>
+              <Switch
+                style={styles.switch}
+                trackColor={{ false: "#767577", true: "#9CB4CC" }}
+                thumbColor={isEnabled ? "#F7EA46" : "#f4f3f4"}
+                ios_backgroundColor="#3e3e3e"
+                onValueChange={toggleSwitch}
+                value={isEnabled}
+              />
+            </View>
             
-            /> 
-            <ButtonLarge
-              pressFunc = {() => {resetOpenAccount()}}
-              nameToucha = 'Reset Values'
-            
-            />             
-          </View>                
-    </View>
+            <View >            
+              <ButtonLarge
+                pressFunc = {() => {validetionFormOpenAccount()}}
+                nameToucha = 'Open Account'
+              
+              /> 
+              <ButtonLarge
+                pressFunc = {() => {resetOpenAccount()}}
+                nameToucha = 'Reset Values'
+              
+              />             
+            </View>                
+      </View>
+     </ScrollView>
     </KeyboardAvoidingView>
   );
 }

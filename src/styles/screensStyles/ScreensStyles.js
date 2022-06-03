@@ -47,6 +47,9 @@ const styles = StyleSheet.create({
     loginComponents:{
         
     },
+    buttomHeader:{
+        marginRight: 20,
+    }
 })
 
 export default styles

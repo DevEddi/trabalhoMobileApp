@@ -4,6 +4,7 @@ import {
     TextInput,
     TouchableOpacity,
     Image,
+    ScrollView
 
   } from 'react-native';
 
@@ -13,7 +14,11 @@ import styles from '../style'
 
 export default function Login(props) {
   return (
-    <KeyboardAvoidingView>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      keyboardVerticalOffset={130}
+    >
+      <ScrollView>
       <View style={styles.container}>
        <Image
           style={styles.imageRick}
@@ -43,9 +48,11 @@ export default function Login(props) {
         >           
           <Text style={styles.textButton}>{props.nameTouch}</Text>
         </TouchableOpacity>
-      </View>
-      
+      </View>      
     </View>
+
+      </ScrollView>
+      
     </KeyboardAvoidingView>
   );
 }
