@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     },
     loginComponents:{
         
-    }
+    },
 })
 
 export default styles
