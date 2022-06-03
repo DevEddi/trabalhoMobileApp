@@ -13,6 +13,7 @@ export default function Login(props) {
   return (
     <KeyboardAvoidingView>
       <View style={styles.container}>
+      <Text style={styles.text}>Login</Text>
       <View>
         <Text style={styles.textLabel}>E-mail:</Text>
         <TextInput

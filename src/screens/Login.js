@@ -8,9 +8,7 @@ import TitleHome from '../components/title/titleHome/TitleHome';
 export default function Login({navigation}) {
   return (
     <View style={ScreensStyles.containerLogin}>  
-        <View style={ScreensStyles.signUpComponents}>
-          <TitleHome titlehome='LOGIN'></TitleHome>
-        </View>
+        
         <View>
           <LoginForm
               sendForm = {() => navigation.navigate('Dashboard')}

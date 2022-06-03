@@ -13,7 +13,9 @@ import styles from '../style'
 export default function SignUp(props) {
   return (
     <KeyboardAvoidingView>
-      <View  style={styles.container}>     
+
+      <View  style={styles.container}> 
+      <Text style={styles.text}>Sign Up</Text>    
         <Text style={styles.textLabel}>Name:</Text>
         <TextInput
           style={styles.input}

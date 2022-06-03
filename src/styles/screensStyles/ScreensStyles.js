@@ -33,29 +33,19 @@ const styles = StyleSheet.create({
     },
     containerLogin:{
         flex: 1, 
-        flexDirection: 'column',
-        justifyContent: 'space-between',   
+        justifyContent: 'center',  
         backgroundColor: colors.whiteRick
     },
     containerSignUp:{
         flex: 1, 
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        backgroundColor: colors.whiteRick  
+        justifyContent: 'center',  
+        backgroundColor: colors.whiteRick,
+
     },
     signUpComponents:{
-        alignSelf: 'flex-start',
-        backgroundColor: colors.greenPortal,
-        width: '50%',
-        height: 100,
-        borderBottomRightRadius: 100,
     },
     loginComponents:{
-        alignSelf: 'flex-start',
-        backgroundColor: colors.greenPortal,
-        width: '50%',
-        height: 100,
-        borderBottomRightRadius: 100,
+        
     }
 })
 

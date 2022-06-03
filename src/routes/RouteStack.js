@@ -29,7 +29,7 @@ export default function RouteStack() {
                 component={Login}
                 options={{ title: 'Back',
                 headerStyle: {
-                    backgroundColor: '#1C8D44',
+                    backgroundColor: '#97C44B',
                   },
                   headerTintColor: '#fff',
                   headerTitleStyle: {
@@ -44,7 +44,7 @@ export default function RouteStack() {
                 component={SignUp}
                 options={{ title: 'Back',
                 headerStyle: {
-                    backgroundColor: '#1C8D44',
+                    backgroundColor: '#97C44B',
                   },
                   headerTintColor: '#fff',
                   headerTitleStyle: {

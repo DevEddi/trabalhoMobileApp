@@ -3,31 +3,29 @@ import { colors, fonts } from '../../styles';
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: colors.greenPortalTwo,
+        backgroundColor: colors.greenPortalThree,
         shadowColor: colors.blueMorty,
+        margin: 12,
         shadowOffset: {
             width: 0,
             height: 6,
         },
         shadowOpacity: 0.37,
         shadowRadius: 7.49,
-        borderTopLeftRadius: 100,
-        borderTopRightRadius:100,
-        padding: 20,
-        paddingTop: 40,
+        borderRadius: 30,
         paddingBottom: 40,
-        paddingTop: 70,
     },
     input:{
         padding: 20,
         margin:10,
         borderWidth: 1,
-        borderRadius: 10,               
+        borderRadius: 10,
+        backgroundColor: colors.whiteRick,               
         
     },
     text:{
         fontSize: fonts.medium,
-        color: colors.blueMorty,
+        color: colors.whiteRick,
         fontWeight: "bold",
         alignSelf: "center",
         textTransform: "uppercase",
