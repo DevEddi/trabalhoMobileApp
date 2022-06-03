@@ -31,8 +31,8 @@ export default function FormAccount() {
           'Nome: ' + name + '\n' +
           'Age: ' + age + '\n' + 
           'Gender: ' + selectedGender + '\n' +
-          'Limit: ' + parseFloat(limitAccount).toFixed(2) + '\n' +
-          'Student: ' + enable,
+          'Limit: $' + parseFloat(limitAccount).toFixed(2) + '\n' +
+          'Alien: ' + enable,
       [
         {
           text: "Confirm",

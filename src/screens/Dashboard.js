@@ -1,10 +1,12 @@
-import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Button, TouchableOpacity, Text } from 'react-native'
+import { TouchableOpacity, Text } from 'react-native'
+import Ionicons from 'react-native-vector-icons/Ionicons';
+
 import ExamOne from './ExamOne'
 import ExamTwo from './ExamTwo'
 import ScreensStyles from '../styles/screensStyles/ScreensStyles';
+
 const Tab = createBottomTabNavigator();
 
 export default function Dashboard({ navigation }) {
@@ -88,7 +90,7 @@ export default function Dashboard({ navigation }) {
               onPress={() => navigation.navigate('Home')}
               style={ScreensStyles.buttomHeader}
             > 
-            <Text style={ScreensStyles.textHeader}>Exit</Text>
+              <Text style={ScreensStyles.textHeader}>Exit</Text>
             </TouchableOpacity>
           ),
         }} 

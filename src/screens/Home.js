@@ -1,15 +1,13 @@
 import {View } from 'react-native';
 import { MotiView } from 'moti';
 
-
 import ButtonSmall from '../components/buttons/buttonSmall/ButtonSmall';
 import ImageHome from '../components/imageComponents/imageHome/ImageHome';
 import ScreensStyles from '../styles/screensStyles/ScreensStyles'
 
 export default function Home({navigation}) {
   return (
-    <View style={ScreensStyles.containerHome}>    
-
+    <View style={ScreensStyles.containerHome}>  
       <MotiView
         from={{
           opacity: 0,
@@ -54,8 +52,7 @@ export default function Home({navigation}) {
           pressFunc = {() => navigation.navigate('SignUp')}
           nameToucha = 'Sign Up'      
         />
-      </MotiView>
-     
+      </MotiView>    
       
     </View>
   );

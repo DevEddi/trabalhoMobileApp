@@ -38,11 +38,6 @@ const styles = StyleSheet.create({
         backgroundColor: colors.greenPortalThree,
 
     },
-    signUpComponents:{
-    },
-    loginComponents:{
-        
-    },
     buttomHeader:{
         marginRight: 20,
         backgroundColor: colors.whiteRick,

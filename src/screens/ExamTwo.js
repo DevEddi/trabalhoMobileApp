@@ -1,6 +1,4 @@
-import {
-  View
-} from 'react-native';
+import { View } from 'react-native';
 
 
 import FormAccount from '../components/forms/formAccount/FormAccount';

@@ -1,4 +1,3 @@
-import { MotiView } from 'moti';
 import React, { useState} from 'react';
 import {
     Text,
@@ -11,7 +10,7 @@ import {
   } from 'react-native';
 
 import { KeyboardAvoidingView } from 'react-native';
-
+import { MotiView } from 'moti';
 import styles from '../style' 
 
 export default function Login(props) {
