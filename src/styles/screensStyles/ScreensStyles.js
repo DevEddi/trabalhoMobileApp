@@ -9,10 +9,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         backgroundColor: colors.greenPortalThree,       
     },
-    containerLogin:{ 
-        flex: 1,
-        justifyContent: 'space-around',
-    },
     buttonsLoginRow:{ 
         flexDirection: 'row',
         justifyContent: 'space-between',

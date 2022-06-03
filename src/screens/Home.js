@@ -30,7 +30,20 @@ export default function Home({navigation}) {
           /> 
       </MotiView>
 
-      <View>
+      <MotiView
+        from={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+
+        }}
+        transition={{
+          type:'timing',
+          duration: 5000,
+        }}
+        
+      >
         <ButtonSmall
           style={ScreensStyles.containerHome}          
           pressFunc = {() => navigation.navigate('Login')}
@@ -41,7 +54,7 @@ export default function Home({navigation}) {
           pressFunc = {() => navigation.navigate('SignUp')}
           nameToucha = 'Sign Up'      
         />
-      </View>
+      </MotiView>
      
       
     </View>

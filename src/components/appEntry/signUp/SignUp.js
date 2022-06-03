@@ -31,42 +31,53 @@ export default function SignUp(props) {
     >
      <ScrollView>
       <View  style={styles.container}>
-      <MotiView
-              from={{
-                scale: 0,
-                translateX: -10,
-                translateY: -20,
-              }}
-              animate={{
-                scale: 1,
-                translateX: 0,
-                translateY: 0,
-      
-              }}
-              transition={{
-                type: 'spring',
-                duration: 10000,
-              }}
-            
-            >
-          <Image
-              style={styles.imageRickCrazy}
-              source={require('../../../images/logoRickCrazy.png')}
-            /> 
-          </MotiView> 
-          <Text style={styles.text}>Sign Up</Text>
-            
-          <Text style={styles.textLabel}>Name:</Text>
-          <View>
-          <TextInput
-            style={styles.input}
-            placeholder="Rick Sanches"
-            keyboardType='default'
-            value={name}
-            onChangeText={setName} 
+        <MotiView
+            from={{
+              scale: 0,
+              translateX: -10,
+              translateY: -20,
+            }}
+            animate={{
+              scale: 1,
+              translateX: 0,
+              translateY: 0,
+    
+            }}
+            transition={{
+              type: 'spring',
+              duration: 10000,
+            }}
+          
+          >
+            <Image
+                style={styles.imageRickCrazy}
+                source={require('../../../images/logoRickCrazy.png')}
+              /> 
+        </MotiView> 
+        
+        <MotiView
+          from={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+  
+          }}
+          transition={{
+            type:'timing',
+            duration: 5000,
+          }}
+        >
+        <Text style={styles.text}>Sign Up</Text>            
+        <Text style={styles.textLabel}>Name:</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Rick Sanches"
+          keyboardType='default'
+          value={name}
+          onChangeText={setName} 
 
-          />
-
+        />
           <Text style={styles.textLabel}>Age:</Text>
           <TextInput
             style={styles.input}
@@ -101,11 +112,10 @@ export default function SignUp(props) {
           >           
             <Text style={styles.textButton}>{props.nameTouch}</Text>
           </TouchableOpacity>   
-          </View>      
-        
+        </MotiView>   
       </View>
-      </ScrollView> 
-    </KeyboardAvoidingView>
+    </ScrollView> 
+  </KeyboardAvoidingView>
   );
 }
 

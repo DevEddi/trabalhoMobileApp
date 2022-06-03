@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     textForgot:{
         alignSelf: 'flex-end',
         paddingRight: 20,
+        fontSize: fonts.small,
     },
     buttonStyle:{
         alignSelf: "center",
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
         margin: 3,
         backgroundColor: colors.titleRick,
         borderRadius: 10,
-        shadowColor: colors.greenPortalThree,
+        shadowColor: colors.greenPortalTwo,
         shadowOffset: {
             width: 0,
             height: 6,
@@ -66,8 +67,8 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-end',
     },
     imageRickCrazy:{
-        width: 200,
-        height: 200,
+        width: 270,
+        height: 270,
         alignSelf: 'flex-start',
     }
     

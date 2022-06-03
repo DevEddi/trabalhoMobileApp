@@ -53,13 +53,26 @@ export default function Login(props) {
               }}
             
             >
-                <Image
-                  style={styles.imageRick}
-                  source={require('../../../images/logoRickNormal.png')}
-                /> 
+              <Image
+                style={styles.imageRick}
+                source={require('../../../images/logoRickNormal.png')}
+              /> 
             </MotiView>
           <Text style={styles.text}>Login</Text>
-          <View>
+          <MotiView
+            from={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+    
+            }}
+            transition={{
+              type: 'timing',
+              duration: 3000,
+            }}
+              
+          >
             <Text style={styles.textLabel}>E-mail:</Text>
             <TextInput
               style={styles.input}
@@ -86,7 +99,7 @@ export default function Login(props) {
             >           
               <Text style={styles.textButton}>{props.nameTouch}</Text>
             </TouchableOpacity>
-          </View>      
+          </MotiView>      
         </View>
       </ScrollView>      
     </KeyboardAvoidingView>
