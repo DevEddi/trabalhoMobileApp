@@ -37,7 +37,15 @@ export default StyleSheet.create({
   switch:{
     padding:5,
     alignSelf: 'flex-start',
-  }
+  },
+  inputText: {
+    borderColor: colors.blueMorty,
+    borderWidth: 1,
+    borderRadius: 10,
+    padding: 20,
+    marginBottom: 10,
+    backgroundColor: colors.whiteRick,    
+  },
 });
 
 

@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {Picker} from '@react-native-picker/picker';
 import Slider from '@react-native-community/slider';
 import { KeyboardAvoidingView } from 'react-native';
@@ -7,15 +6,15 @@ import { KeyboardAvoidingView } from 'react-native';
 import { 
   Text,
   View,
-  TextInput,
   Alert,
   Switch,
   ScrollView,
+  TextInput,
 } from 'react-native';
 
-import styles from './style';
+import styles from './style'
 import ButtonLarge from '../../buttons/buttonLarge/ButtonLarge';
-import InputInfo from '../../inputs/inputInfo/InputInfo';
+
 
 export default function FormAccount() {
 
@@ -54,9 +53,7 @@ export default function FormAccount() {
       }else{
           Alert.alert('You must fill in all missing fields')
       }
-
   }
-
   function resetOpenAccount(){
       setName(null)
       setAge(null)
@@ -73,26 +70,26 @@ export default function FormAccount() {
      <ScrollView>
       <View style={styles.container}>
             <Text style={styles.title}>Bank Morty</Text>   
-            <View >
+            <View>
 
               <Text style={styles.titleInputs}>Name:</Text>
-              <InputInfo
-                style={styles.inputs}
+              <TextInput
                 value={name}
-                onChangeText={setName}  
-                keyType="default"
-                placeHolderName='Digit your name'
+                onChangeText={setName}            
+                style={styles.inputText}
+                placeholder="Digit your name"          
               />
-              
+
               <Text style={styles.titleInputs}>Age:</Text>
-              <InputInfo
+              <TextInput
                 value={age}
                 maxLength={2}
-                onChangeText={setAge}   
-                keyType="numeric"
-                placeHolderName='Digit your age'
-              />            
-            </View>      
+                keyboardType="numeric"
+                onChangeText={setAge}            
+                style={styles.inputText}
+                placeholder="Digit your age"          
+              /> 
+          </View>       
             
             <View >
               <Text style={styles.titleInputs}>Gender:</Text>
@@ -103,12 +100,24 @@ export default function FormAccount() {
               }>
                 <Picker.Item
                   style={styles.pickerItem}
-                  label="Man"
-                  value="Man" />
+                  label="Clone Mr. Meeseeks"
+                  value="lone Mr. Meeseeks" />
                 <Picker.Item 
                   style={styles.pickerItem}
-                  label="Woman"
-                  value="Woman" />
+                  label="Morty Jr."
+                  value="Morty Jr." />
+                  <Picker.Item 
+                  style={styles.pickerItem}
+                  label="Cronenbergs"
+                  value="Cronenbergs" />
+                  <Picker.Item 
+                  style={styles.pickerItem}
+                  label="Strange: Fart"
+                  value="Strange: Fart" />
+                  <Picker.Item 
+                  style={styles.pickerItem}
+                  label="Cromulons"
+                  value="Cromulons" />
               </Picker>
             </View >
 
@@ -125,7 +134,7 @@ export default function FormAccount() {
             </View>
 
             <View >
-              <Text style={styles.titleInputs}>Estudante:</Text>
+              <Text style={styles.titleInputs}>Alien:</Text>
               <Switch
                 style={styles.switch}
                 trackColor={{ false: "#767577", true: "#9CB4CC" }}

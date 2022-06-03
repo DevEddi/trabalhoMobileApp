@@ -24,9 +24,6 @@ export default function SignUp(props) {
         props.sendForm()
     }
   }
-
-
-
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}

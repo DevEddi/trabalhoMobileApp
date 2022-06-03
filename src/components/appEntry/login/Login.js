@@ -33,44 +33,42 @@ export default function Login(props) {
       keyboardVerticalOffset={130}
     >
       <ScrollView>
-      <View style={styles.container}>
-       <Image
-          style={styles.imageRick}
-          source={require('../../../images/logoRickNormal.png')}
-        /> 
-      <Text style={styles.text}>Login</Text>
-      <View>
-        <Text style={styles.textLabel}>E-mail:</Text>
-        <TextInput
-          style={styles.input}
-          placeholder="ricksanches@mail.com"
-          keyboardType='email-address'    
-          value={email}
-          onChangeText={setEmail}     
+          <View style={styles.container}>
+            <Image
+              style={styles.imageRick}
+              source={require('../../../images/logoRickNormal.png')}
+            /> 
+          <Text style={styles.text}>Login</Text>
+          <View>
+            <Text style={styles.textLabel}>E-mail:</Text>
+            <TextInput
+              style={styles.input}
+              placeholder="ricksanches@mail.com"
+              keyboardType='email-address'    
+              value={email}
+              onChangeText={setEmail}     
 
-        />
-        <Text style={styles.textLabel}>Password:</Text>
-        <TextInput
-          style={styles.input}
-          placeholder="*******"
-          keyboardType='default'
-          secureTextEntry={true}
-          value={password}
-          onChangeText={setPassword}
-          
-        />
-        <Text style={styles.textForgot}>Forgot password ?</Text>
-        <TouchableOpacity
-          onPress={acessUser}
-          style={styles.buttonStyle}
-        >           
-          <Text style={styles.textButton}>{props.nameTouch}</Text>
-        </TouchableOpacity>
-      </View>      
-    </View>
-
-      </ScrollView>
-      
+            />
+            <Text style={styles.textLabel}>Password:</Text>
+            <TextInput
+              style={styles.input}
+              placeholder="*******"
+              keyboardType='default'
+              secureTextEntry={true}
+              value={password}
+              onChangeText={setPassword}
+              
+            />
+            <Text style={styles.textForgot}>Forgot password ?</Text>
+            <TouchableOpacity
+              onPress={acessUser}
+              style={styles.buttonStyle}
+            >           
+              <Text style={styles.textButton}>{props.nameTouch}</Text>
+            </TouchableOpacity>
+          </View>      
+        </View>
+      </ScrollView>      
     </KeyboardAvoidingView>
   );
 }
