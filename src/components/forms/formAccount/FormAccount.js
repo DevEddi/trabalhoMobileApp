@@ -11,7 +11,7 @@ import {
   ScrollView,
   TextInput,
 } from 'react-native';
-
+import {MotiView} from 'moti'
 import styles from './style'
 import ButtonLarge from '../../buttons/buttonLarge/ButtonLarge';
 
@@ -69,7 +69,21 @@ export default function FormAccount() {
     >
      <ScrollView>
       <View style={styles.container}>
-            <Text style={styles.title}>Bank Morty</Text>   
+            <MotiView
+                from={{
+                  opacity: 0,
+                }}
+                animate={{
+                  opacity: 1
+        
+                }}
+                transition={{
+                  type: 'timing',
+                  duration: 2000,
+                }}
+              >
+              <Text style={styles.title}>Bank Morty</Text>   
+            </MotiView>
             <View>
 
               <Text style={styles.titleInputs}>Name:</Text>

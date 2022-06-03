@@ -46,8 +46,7 @@ export default function SignUp(props) {
             transition={{
               type: 'spring',
               duration: 10000,
-            }}
-          
+            }}          
           >
             <Image
                 style={styles.imageRickCrazy}

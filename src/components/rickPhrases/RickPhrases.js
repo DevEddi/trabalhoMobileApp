@@ -6,7 +6,7 @@ import {
   Button
 } from 'react-native'
 
-
+import {MotiView} from 'moti'
 import styles from './style'
 import ButtonMedium from '../buttons/buttonMedium/ButtonMedium'
 import rickNormal from '../../images/rickNormal.png'
@@ -35,10 +35,27 @@ export default function RickPhrases() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tips Rick</Text>   
-      <View >
+      <MotiView
+        from={{
+          scale: 0,
+          translateX: -10,
+          translateY: -20,
+        }}
+        animate={{
+          scale: 1,
+          translateX: 0,
+          translateY: 0,
+
+        }}
+        transition={{
+          type: 'spring',
+          duration: 10000,
+        }}
+      
+      >
         <Image style={styles.image} source={rick} />       
         <Text style={styles.text}>{phrase}</Text>
-      </View>
+      </MotiView>
 
       <View style={styles.buttonsRow}>
         <ButtonMedium
