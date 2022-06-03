@@ -1,7 +1,7 @@
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Button } from 'react-native'
+import { Button, TouchableOpacity, Text } from 'react-native'
 import ExamOne from './ExamOne'
 import ExamTwo from './ExamTwo'
 import ScreensStyles from '../styles/screensStyles/ScreensStyles';
@@ -53,12 +53,12 @@ export default function Dashboard({ navigation }) {
            },
           
           headerRight: () => (
-            <Button
+            <TouchableOpacity
               onPress={() => navigation.navigate('Home')}
-              title="Sair"
-              color="#f11"
               style={ScreensStyles.buttomHeader}
-            />
+            > 
+            <Text style={ScreensStyles.textHeader}>Exit</Text>
+            </TouchableOpacity>
           ),
         }} 
       />
@@ -84,12 +84,12 @@ export default function Dashboard({ navigation }) {
            },
           
           headerRight: () => (
-            <Button
+            <TouchableOpacity
               onPress={() => navigation.navigate('Home')}
-              title="Sair"
-              color="#f11"
               style={ScreensStyles.buttomHeader}
-            />
+            > 
+            <Text style={ScreensStyles.textHeader}>Exit</Text>
+            </TouchableOpacity>
           ),
         }} 
       />

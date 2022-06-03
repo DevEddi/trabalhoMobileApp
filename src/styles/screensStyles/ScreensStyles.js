@@ -49,6 +49,15 @@ const styles = StyleSheet.create({
     },
     buttomHeader:{
         marginRight: 20,
+        backgroundColor: colors.whiteRick,
+        padding: 5,
+        width: 100,
+        borderRadius: 10,
+    },
+    textHeader:{        
+        alignSelf: 'center',
+        fontWeight: 'bold',
+        fontSize: fonts.regular
     }
 })
 
