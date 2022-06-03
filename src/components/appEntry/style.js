@@ -59,6 +59,16 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         alignSelf: "center",
         textTransform: "uppercase",
+    },
+    imageRick:{
+        width: 270,
+        height: 270,
+        alignSelf: 'flex-end',
+    },
+    imageRickCrazy:{
+        width: 200,
+        height: 200,
+        alignSelf: 'flex-start',
     }
     
 })

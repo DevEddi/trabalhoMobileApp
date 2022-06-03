@@ -4,6 +4,7 @@ import {
     TextInput,
     StyleSheet,
     TouchableOpacity,
+    Image,
   } from 'react-native';
 
 import { KeyboardAvoidingView } from 'react-native';
@@ -14,9 +15,15 @@ export default function SignUp(props) {
   return (
     <KeyboardAvoidingView>
 
-      <View  style={styles.container}> 
-      <Text style={styles.text}>Sign Up</Text>    
+      <View  style={styles.container}>
+        <Image
+            style={styles.imageRickCrazy}
+            source={require('../../../images/logoRickCrazy.png')}
+          />  
+        <Text style={styles.text}>Sign Up</Text>
+          
         <Text style={styles.textLabel}>Name:</Text>
+        <View>
         <TextInput
           style={styles.input}
           placeholder="Rick Sanches"
@@ -51,7 +58,8 @@ export default function SignUp(props) {
           style={styles.buttonStyle}
         >           
           <Text style={styles.textButton}>{props.nameTouch}</Text>
-        </TouchableOpacity>        
+        </TouchableOpacity>   
+        </View>       
       
     </View>
     </KeyboardAvoidingView>

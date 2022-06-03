@@ -2,7 +2,9 @@ import {
     Text,
     View,
     TextInput,
-    TouchableOpacity
+    TouchableOpacity,
+    Image,
+
   } from 'react-native';
 
 import { KeyboardAvoidingView } from 'react-native';
@@ -13,6 +15,10 @@ export default function Login(props) {
   return (
     <KeyboardAvoidingView>
       <View style={styles.container}>
+       <Image
+          style={styles.imageRick}
+          source={require('../../../images/logoRickNormal.png')}
+        /> 
       <Text style={styles.text}>Login</Text>
       <View>
         <Text style={styles.textLabel}>E-mail:</Text>
