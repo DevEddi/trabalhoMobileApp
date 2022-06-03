@@ -9,7 +9,7 @@ import {
   } from 'react-native';
 
 import { KeyboardAvoidingView } from 'react-native';
-  
+import { MotiView } from 'moti'
 import styles from '../style' 
   
 export default function SignUp(props) {
@@ -31,10 +31,29 @@ export default function SignUp(props) {
     >
      <ScrollView>
       <View  style={styles.container}>
+      <MotiView
+              from={{
+                scale: 0,
+                translateX: -10,
+                translateY: -20,
+              }}
+              animate={{
+                scale: 1,
+                translateX: 0,
+                translateY: 0,
+      
+              }}
+              transition={{
+                type: 'spring',
+                duration: 10000,
+              }}
+            
+            >
           <Image
               style={styles.imageRickCrazy}
               source={require('../../../images/logoRickCrazy.png')}
-            />  
+            /> 
+          </MotiView> 
           <Text style={styles.text}>Sign Up</Text>
             
           <Text style={styles.textLabel}>Name:</Text>

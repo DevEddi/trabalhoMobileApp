@@ -13,11 +13,12 @@ export default function Home({navigation}) {
       <MotiView
         from={{
           opacity: 0,
-          rotate: '230deg'
+          rotate: '230deg',
         }}
         animate={{
           rotate: '0deg',
-          opacity: 1
+          opacity: 1,
+
         }}
         transition={{
           type:'timing',

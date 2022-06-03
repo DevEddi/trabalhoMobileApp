@@ -1,3 +1,4 @@
+import { MotiView } from 'moti';
 import React, { useState} from 'react';
 import {
     Text,
@@ -34,10 +35,29 @@ export default function Login(props) {
     >
       <ScrollView>
           <View style={styles.container}>
-            <Image
-              style={styles.imageRick}
-              source={require('../../../images/logoRickNormal.png')}
-            /> 
+            <MotiView
+              from={{
+                scale: 0,
+                translateX: -10,
+                translateY: -20,
+              }}
+              animate={{
+                scale: 1,
+                translateX: 0,
+                translateY: 0,
+      
+              }}
+              transition={{
+                type: 'spring',
+                duration: 10000,
+              }}
+            
+            >
+                <Image
+                  style={styles.imageRick}
+                  source={require('../../../images/logoRickNormal.png')}
+                /> 
+            </MotiView>
           <Text style={styles.text}>Login</Text>
           <View>
             <Text style={styles.textLabel}>E-mail:</Text>
