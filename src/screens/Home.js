@@ -1,4 +1,4 @@
-import {View } from 'react-native';
+import { View } from 'react-native';
 import { MotiView } from 'moti';
 
 import ButtonSmall from '../components/buttons/buttonSmall/ButtonSmall';
