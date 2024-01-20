@@ -78,20 +78,20 @@ by AVA until 11pm on 06/05/22.
 <img src="images/MortyBank.jpg" alt="imagem" width='300px' height='600' style='display: inline-block;'>
 
 
-### Referências
+### References
 
-[freepnglogos](https://www.freepnglogos.com/images/rick-and-morty-31013.html)
+- [freepnglogos](https://www.freepnglogos.com/images/rick-and-morty-31013.html)
 
-[freepnglogos](https://www.freepnglogos.com/images/rick-and-morty-30969.html)
+- [freepnglogos](https://www.freepnglogos.com/images/rick-and-morty-30969.html)
 
-[freepnglogos](https://www.freepnglogos.com/pics/rick-and-morty)
+- [freepnglogos](https://www.freepnglogos.com/pics/rick-and-morty)
 
-[pensador](https://www.pensador.com/autor/rick_and_morty/)
+- [pensador](https://www.pensador.com/autor/rick_and_morty/)
 
-[subpng](https://www.subpng.com/png-667jk2/)
+- [subpng](https://www.subpng.com/png-667jk2/)
 
-[kissclipart](https://www.kissclipart.com/rick-sanchez-rick-and-morty-clipart-rick-sanchez-m-u2wtry/)
+- [kissclipart](https://www.kissclipart.com/rick-sanchez-rick-and-morty-clipart-rick-sanchez-m-u2wtry/)
 
-[subpng](https://www.subpng.com/png-pat8a4/)
+- [subpng](https://www.subpng.com/png-pat8a4/)
 
-[subpng](https://www.subpng.com/png-goara7/)
+- [subpng](https://www.subpng.com/png-goara7/)
