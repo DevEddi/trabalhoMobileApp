@@ -6,70 +6,69 @@
 
 ---
 
-### Disciplina: Introdução ao Desenvolvimento Mobile
-### Data de entrega: 05/06/22 (via AVA) - Data de apresentação: 06/06/22
-#### Valor: 4 pontos
-#### Tema: Sugestão da professora ou tema escolhido pelo grupo
+### Subject: Introduction to Mobile Development
+### Delivery date: 06/05/22 (via AVA) - Presentation date: 06/06/22
+#### Value: 4 points
+#### Theme: Teacher’s suggestion or topic chosen by the group
 
 ---
 
-## Sugestão de tema
+## Theme suggestion
 
-Criar uma aplicação que contenha uma tela de login e cadastro inserindo animações.
+Create an application that contains a login and registration screen by inserting animations.
 
-Deverão ser criadas pelo menos 4 telas, sendo que uma tela deve ser o app da Avaliação 1 e outra tela o app da Avaliação 2.
+At least 4 screens must be created, one screen must be the Assessment 1 app and another screen the Assessment 2 app.
 
-#### Na tela inicial devem conter os seguintes itens:
-- Logo da empresa/tema
-- Dois campos para preenchimento do usuário e senha
-- Um botão para logar/acessar
-- Um botão para cadastrar novo usuário
+#### The home screen must contain the following items:
+- Company logo/theme
+- Two fields for filling in the username and password
+- One button to log in/access
+- One button to register new user
 
-### Obs:
-- Toda aplicação deve ser testada no celular.
-- Ao carregar a tela inicial, deve haver uma animação na View contendo os campos de usuário e senha e os botões de login e cadastrar.
-- Ao digitar o usuário, quando o teclado abrir, o logo deve diminuir, quando o teclado fechar, o logo deve voltar ao tamanho original.
-
---- 
-
-### Na tela de cadastro devem conter os seguintes itens:
-- Um campo para inserir o novo usuário
-- Um campo para inserir a senha
-### Obs:
-- Deve haver pelo menos duas animações na tela de cadastro.
-
-Após o cadastro de um novo usuário, deve ser redirecionado para a tela inicial. Após o login (sem nenhum tipo de verificação), deve ser redirecionado para uma nova tela que deve conter a navegação Tabs com, no mínimo, duas telas:
-
-- Home: o conteúdo desta tela fica a critério do aluno
-- App da Avaliação 1 (obrigatória).
-- App da Avaliação 2 (obrigatória).
-- Outra(s) tela(s) qual(is)quer (opcional).
-- Em cada uma dessas telas deve conter pelo menos uma animação (View, Text,
-Image, etc)
+### Note:
+- Every application must be tested on a cell phone.
+- When loading the home screen, there must be an animation in the View containing the username and password fields and the login and register buttons.
+- When typing the user, when the keyboard opens, the logo should decrease, when the keyboard closes, the logo should return to its original size.
 
 ---
 
-### Os seguintes elementos devem estar presentes no código:
-- O código deve estar organizado e legível. Devem ser criadas pastas destinadas para cada “parte” do código: componentes, imagens, telas, rotas, etc.
-- As cores e os tamanhos devem estar em um arquivo separado (ex.: colors.js e sizes.js)
-- Os botões e os inputs de texto, etc. devem ser um componente sem estado (ex.: MyButton.js e MyTextInput.js)
-____________________________________________________________________
-### Informações importantes:
-Todo o conteúdo apresentado em aula deve ser utilizado no trabalho:
-- Componentes React Native
+### The registration screen must contain the following items:
+- A field to enter the new user
+- A field to enter the password
+### Note:
+- There must be at least two animations on the registration screen.
+
+After registering a new user, they must be redirected to the home screen. After logging in (without any type of verification), you must be redirected to a new screen that must contain Tabs navigation with at least two screens:
+
+- Home: the content of this screen is at the discretion of the student
+- Assessment 1 app (mandatory).
+- Assessment 2 app (mandatory).
+- Any other screen(s) (optional).
+- Each of these screens must contain at least one animation (View, Text,
+image, etc.)
+
+---
+
+### The following elements must be present in the code:
+- The code must be organized and readable. Folders must be created for each “part” of the code: components, images, screens, routes, etc.
+- Colors and sizes must be in a separate file (e.g. colors.js and sizes.js)
+- Buttons and text inputs, etc. must be a stateless component (e.g. MyButton.js and MyTextInput.js)
+______________________________________________________________________
+### Important informations:
+All content presented in class must be used in the work:
+- React Native components
 - React Hooks (useState, useEffect, useContext)
-- Navegação
-- Animação
-- Qualquer conteúdo extra será validado.
-____________________________________________________________________
-Observações:
-- O trabalho deve ser feito em grupo e não é permitido copiar o trabalho do outro
-grupo. Se isso ocorrer, a nota será dividida pelo total de alunos envolvidos na cópia.
-- O link do Github contendo o trabalho (ou o arquivo compactado) deve ser enviado
-pelo AVA até as 23h do dia 05/06/22.
-- Todos os alunos deverão apresentar o trabalho na data combinada.
-- Qualquer dúvida/problema, entrar em contato por e-mail.
-
+- Navigation
+- Animation
+- Any extra content will be validated.
+______________________________________________________________________
+Comments:
+- Work must be done in groups and copying someone else’s work is not allowed
+group. If this occurs, the grade will be divided by the total number of students involved in the copy.
+- The Github link containing the work (or zipped file) must be sent
+by AVA until 11pm on 06/05/22.
+- All students must present their work on the agreed date.
+- If you have any questions/problems, please contact us via email.
 ### Screens
 <img src="images/homeImage.jpg" alt="imagem" width='300px' height='600' style='display: inline-block;'>
 <img src="images/loginImage.jpg" alt="imagem" width='300px' height='600' style='display: inline-block;'>
